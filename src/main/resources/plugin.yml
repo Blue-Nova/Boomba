@@ -1,0 +1,7 @@
+name: boomba
+version: '1.0'
+main: io.github.bluenova.boomba.Boomba
+api-version: '1.21'
+commands:
+    boomba:
+        description: "main command for Boomba"

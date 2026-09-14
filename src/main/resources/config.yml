@@ -1,0 +1,167 @@
+# Boomba plugin default configuration
+# This config file is balanced by hand and multiple hours of play testing.
+# Change it if you want, but I cannot guarantee that the game would be:
+# 1. fun
+# 2. fair
+# 3. or even functional
+# if you play with these values
+
+# ======================
+# General Boomba Configs
+# ======================
+
+wave_duration_seconds: 600
+max_difficulty: 10
+
+# ===================================
+# Effects that are enabled by default
+# ===================================
+
+# All Explode On Death Effect
+all_explode_on_death_active_by_default: true
+# The amount of explosion power per Max Health of the entity
+# (remember one heart is two hit points)
+all_explode_on_death_hearts_per_explosion_power: 7
+# This adds a 10% Explosion Power buff per the amount of difficulty reached
+# Wave 2 = 10% buff
+# difficulty_per_explosion_power Waves later...
+# Wave 4 = 20% buff
+all_explode_on_death_difficulty_per_explosion_power: 2
+
+
+# Creepers High Knockback Effect
+creepers_high_knockback_active_by_default: true
+# The multiplier for the knockback velocity of creepers when they explode
+creepers_high_knockback_knockback_multiplier: 2.0
+
+
+# Enderman Explosive Teleport Effect
+enderman_explosive_teleport_active_by_default: true
+# The explosion power of the explosion created when an enderman teleports
+enderman_explosive_teleport_explosion_power: 5.0
+# This adds 0.2 Explosion Power per the amount of difficulty (waves) reached
+enderman_explosive_teleport_explosion_power_per_difficulty: 0.2
+
+
+# Explosive Punch Effect
+explosive_punch_active_by_default: true
+explosive_punch_minimum_damage_threshold: 6
+
+
+# Fall Damage Explosion Effect
+fall_damage_explode_active_by_default: true
+fall_damage_explode_cooldown: 80
+fall_damage_explode_power_per_fall_distance: 10
+fall_damage_explode_explosion_count_per_explosion_power: 7
+
+
+# Flint and Steel Explosion Effect
+flint_and_steel_explode_active_by_default: true
+
+
+# Refill Hunger Effect
+refill_hunger_active_by_default: true
+refill_hunger_cooldown_seconds: 30
+refill_hunger_amount: 3
+
+
+# Tag Bomb Effect
+tag_bomb_active_by_default: true
+
+
+# Upgraded Armor Effect
+upgraded_armor_active_by_default: true
+
+
+# Bastion Effect
+bastion_active_by_default: true
+# The Percentage of EXPLOSION damage reduced to players when in range of a bastion
+# (default 50% reduction)
+bastion_explosion_damage_reduction_in_range: 50
+base_bastion_range: 9
+max_bastion_range: 26
+bastion_upgrade_amount: 640
+
+# Keep Hotbar Effect
+keep_hotbar_active_by_default: true
+
+
+# Creepers Lay Eggs Effect
+creepers_lay_eggs_active_by_default: true
+creepers_lay_eggs_min_seconds: 100
+creepers_lay_eggs_max_seconds: 350
+
+
+# ====================================
+# Effects that are disabled by default
+# ====================================
+
+# Phantoms Suicide Bombers Effect
+phantoms_suicide_bombers_active_by_default: false
+# The cooldown in seconds for Boomba to roll spawning phantom bombers
+phantoms_suicide_bombers_attempt_cooldown_seconds: 60
+# The EP of the phantom bombers
+phantoms_suicide_bombers_explosion_power: 2.0
+# The base chance percentage for the phantom bombers to spawn
+phantoms_suicide_bombers_chance_percentage: 5
+# Every time Boomba fails a spawn roll of Phantom Bombers, the base chance increases by this amount
+# Base Chance resets on a successful spawn roll
+phantoms_suicide_bombers_added_percentage_on_fail: 2
+
+
+# Chance Drop Tnt Effect
+chance_drop_tnt_active_by_default: false
+chance_drop_tnt_chance_percent: 3
+chance_drop_tnt_check_interval_seconds: 45
+
+# TNT Shower Effect
+tnt_shower_active_by_default: false
+tnt_shower_chance_percentage: 1
+tnt_shower_cooldown_seconds: 120
+tnt_shower_percentage_increase_on_fail: 2
+# TNT Shower - Random Shower
+tnt_shower_random_shower_total_spawn: 8
+tnt_shower_random_shower_interval_ticks: 20
+tnt_shower_random_shower_height_above_player: 12
+tnt_shower_random_shower_radius: 10
+tnt_shower_random_shower_fuse_ticks: 80
+# TNT Shower - Popin Shower
+tnt_shower_popin_shower_total_spawns: 3
+tnt_shower_popin_shower_interval_ticks: 80
+tnt_shower_popin_shower_fuse_ticks: 40
+tnt_shower_popin_shower_seated_fuse_ticks: 60
+# TNT Shower - Sniper Shower
+tnt_shower_sniper_shower_total_spawns: 4
+tnt_shower_sniper_shower_interval_ticks: 110
+tnt_shower_sniper_shower_height_above_player: 20
+tnt_shower_sniper_shower_radius: 30
+tnt_shower_sniper_shower_delay_before_launch_ticks: 40
+tnt_shower_sniper_shower_speed_per_tick: 4
+tnt_shower_sniper_shower_explosion_margin_ticks: 1
+
+# Mine Field Effect
+mine_field_active_by_default: false
+mine_field_cooldown_seconds: 120
+mine_field_explosion_power: 5.0
+
+# Ores Explode Effect
+ores_explode_active_by_default: false
+# Chances for explosion in (percentage % )
+ores_explode_coal_ore: 3
+ores_explode_iron_ore: 5
+ores_explode_gold_ore: 10
+ores_explode_diamond_ore: 15
+ores_explode_emerald_ore: 40
+ores_explode_nether_quartz_ore: 80
+ores_explode_deepslate_coal_ore: 3
+ores_explode_deepslate_iron_ore: 5
+ores_explode_deepslate_gold_ore: 10
+ores_explode_deepslate_diamond_ore: 15
+ores_explode_deepslate_emerald_ore: 40
+
+# Enderman Wave Effect
+enderman_wave_active_by_default: false
+# The base chance percentage for the enderman wave to spawn
+enderman_wave_attempt_chance: 1
+# The cooldown in seconds for Boomba to attempt spawning an enderman wave
+enderman_wave_cooldown_seconds: 150
